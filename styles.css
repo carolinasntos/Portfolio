@@ -1,3 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Preahvihear&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Preahvihear', monospace;
+}
+
 body {
-    background: rosybrown;
+    background: lightskyblue;
+}
+
+.header {
+    width: 100vw;
+    padding-top: 2rem;
+    padding-right: 4rem;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.navbar__items {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar__item {
+    list-style-type: none;
+}
+
+.item__link {
+    text-decoration: none;
+    color: black;
+    margin-right: 1.2rem;
+    font-size: 0.9rem;
+
+    transition: all 300ms linear;
+}
+
+.item__link:hover {
+    color: blue;
 }

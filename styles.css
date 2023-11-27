@@ -9,7 +9,7 @@
 }
 
 body {
-    background: lightskyblue;
+    background: white;
 }
 
 .header {
@@ -42,4 +42,129 @@ body {
 
 .item__link:hover {
     color: blue;
+}
+
+.icon {
+    text-align: center;
+    padding: 0px;
+    margin-left: 10px;
+    margin-top: 5px;
+    font-size: 24px;
+    display: block;
+    text-decoration: none;
+}
+
+.sidebar {
+    height: 100%;
+    width: 10px; 
+    position: fixed;
+    top: 10;
+    left: 0;
+    background-color: transparent; 
+    padding-top: 150px; 
+}
+
+.icon img {
+    width: 24px; 
+    height: 24px; 
+}
+
+.vertical-line {
+    border-left: 1px solid gray; 
+    height: 20%;
+    position: absolute;
+    left: 20px; 
+}
+
+section {
+    padding: 0 25%;
+} 
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    gap: 30px;
+    flex-direction: row;
+    padding: 0 25px;
+}
+
+.home-img{
+    width: 430px;
+    height: 430px;
+    order: 1;
+}
+
+/*.home-text {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}*/
+
+.home-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.home-text span{
+    padding: 5px 25px;
+    background: linear-gradient(130.08deg, #09839e 0%, rgb(68, 128, 240) 100%);
+    border: 1px solid white;
+    border-radius: 100px;
+    color: white;
+    font-weight: 700;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.home-text h1{
+    font-size: 17px;
+    margin: 23px 0;
+}
+
+.home-text p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    mask-border: 50px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.home-text h2{
+    font-size: 30px;
+    font-weight: 50;
+    line-height: 40px;
+    mask-border: 50px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 15px;
+    background: rgba(7, 66, 114, 0.928);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgba(0, 0, 0, 0.31);
+    font-size: 10px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.6s ease-in-out;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    background: transparent;
+    color: rgba(7, 66, 114, 0.928);
+    margin-left: 25px;
+}
+.two{
+    background: rgb(7, 56, 87);
+    border: 2px solid rgba(7, 66, 114, 0.928);
+    color: white;
+    margin-left: 25px;
 }

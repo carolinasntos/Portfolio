@@ -6,10 +6,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Preahvihear', monospace;
+    list-style: none;
 }
 
 body {
     background: white;
+    margin: 0;
+    padding: 0;
 }
 
 .header {
@@ -90,23 +93,18 @@ section {
     justify-content: space-between;
     gap: 30px;
     padding: 0 25px;
-    margin-top: 0;
+    margin-top: -60px;
 }
 
 .home-img{
     width: 630px;
     height: 630px;
+    margin: 0;
+    margin-top: 60px;
 }
-
-/*.home-text {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}*/
 
 .home-img img{
     width: 100%;
-    height: 100%;
     object-fit: contain;
 }
 
@@ -114,19 +112,21 @@ section {
     flex: 1;
     display: flex;
     flex-direction: column;
+    margin: 0;
+    margin-top: -80px;
 }
 
 .home-text span{
     padding: 5px 25px;
-    background: linear-gradient(130.08deg, #09839e 0%, rgb(68, 128, 240) 100%);
+    width: 280px;
+    background: linear-gradient(130.08deg, #09839e 10%, rgb(68, 128, 240) 100%);
     border: 1px solid white;
     border-radius: 100px;
     color: white;
     font-weight: 700;
-    font-size: 10px;
+    font-size: 9px;
     text-transform: uppercase;
-    margin-left:0;
-    margin-top: 0;
+    margin: 0;
 }
 
 .home-text h1{
@@ -165,8 +165,9 @@ section {
     font-weight: 600;
     border-radius: 8px;
     transition: all 0.6s ease-in-out;
-    margin-top: 20px;
-    margin-left: 40px;
+    margin-top: 10px;
+    margin-left: 30px;
+    width: 100px;
 }
 
 .btn:hover {
@@ -175,9 +176,268 @@ section {
     color: rgba(7, 66, 114, 0.928);
     margin-left: 25px;
 }
-.two{
-    background: rgb(7, 56, 87);
-    border: 2px solid rgba(7, 66, 114, 0.928);
+
+/*---------About------------*/
+.about-text h1{
+    padding: 80px 50;
+    margin-top: 50px;
+    margin-left: -230px;
+    color: rgb(62, 117, 188);
+    font-size: 40px;
+    margin-bottom: 80px;
+}
+
+.about-text h2{
+    padding: 80px 50;
+    margin-left: -200px;
+    color: rgb(0, 0, 0);
+    margin-top: 110px;
+    font-size: 40px;
+}
+
+.about-text p1{
+    padding: 80px 50;
+    margin-left: -200px;
+    color: rgb(0, 0, 0);
+    margin-top: -20px;
+    font-size: 20px;
+}
+
+.about-text p{
+    padding: 80px 50;
+    margin-left: -200px;
+    color: rgb(0, 0, 0);
+    margin-top: 50px;
+    font-size: 25px;
+    margin-bottom: 100px;
+    line-height: 40px;
+    mask-border: 30px;
+    margin-right: -200px;
+}
+
+/*.nuevo-texto {
+    white-space: pre;
+}*/
+
+/*---------Portfolio------------*/
+#project{
+    padding: 50px 0;
+    margin-left: 170px;
+    margin-right: 170px;
+}
+
+#project h1{
+    padding: 50px 0;
+    margin-top: 30px;
+    margin-left: -30px;
+    color: rgb(62, 117, 188);
+    font-size: 40px;
+}
+
+.container1 {
     color: white;
-    margin-left: 25px;
+}
+
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(#1b3963, rgba(33, 99, 185, 0.851));
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 12px;
+    transition: height 0.5s;
+}
+
+.layer h3{
+    font-size: 15px;
+    font-weight: 2000;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: rgb(228, 238, 245);
+}
+
+.layer a{
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 60px;
+    background: rgb(28, 28, 125);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid rgb(49, 96, 178);
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color:white;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: rgb(122, 163, 218);
+}
+
+.proyect-text h1{
+    padding: 80px 50;
+    margin-left: 150px;
+    color: rgb(62, 117, 188);
+    font-size: 40px;
+}
+
+.skill{
+    width: 500px;
+    margin: 60px auto;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 14px 28px rgb(49, 96, 178, 0.25), 0 10px 10px rgb(28, 28, 125,0.22);
+}
+
+.skill-sub h1{
+    padding: 50px 0;
+    margin-top: 30px;
+    margin-left: 330px;
+    color: rgb(62, 117, 188);
+    font-size: 40px;
+    margin-bottom: -40px;
+}
+
+.skill li{
+    margin: 20px 0;
+    padding: 10px;
+    font-size: 15px;
+    color: #1b3963;
+}
+
+.bar{
+    background: #7194c6;
+    display: block;
+    height: 20px;
+    border: 1px solid rgb(49, 96, 178, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgb(49, 96, 178, 0.12), 0 1px 2px rgb(28, 28, 125,0.24);
+    transition: all 0.3s cubic-bezier(0.25,0.8,0.25,1);
+}
+
+.bar:hover{
+    box-shadow: 0 14px 28px rgb(49, 96, 178, 0.25), 0 10px 10px rgb(28, 28, 125,0.22);
+
+}
+
+.bar span2{
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, rgb(62, 117, 188,1) 0%, rgb(23, 74, 185)100%);
+}
+.html{
+    width: 50%;
+    animation: html 3s;
+}
+.css{
+    width: 50%;
+    animation: html 3s;
+}
+.java{
+    width: 50%;
+    animation: html 3s;
+}
+.python{
+    width: 80%;
+    animation: html 3s;
+}
+.c{
+    width: 80%;
+    animation: html 3s;
+}
+.javascript{
+    width: 70%;
+    animation: html 3s;
+}
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+@keyframes java{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+@keyframes python{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+@keyframes c{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
 }

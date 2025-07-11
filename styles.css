@@ -85,8 +85,7 @@ section {
 
 .home {
     position: relative;
-    width: 80%;
-    margin: 0 auto;
+    width: 100%;
     height: 100vh;
     display:flex;
     align-items:center;
@@ -94,18 +93,21 @@ section {
     gap: 30px;
     padding: 0 25px;
     margin-top: -60px;
+    background-color: #000020;
 }
 
 .home-img{
-    width: 630px;
-    height: 630px;
+    width: 550px;
+    height: 550px;
     margin: 0;
     margin-top: 60px;
+    margin-left: 100px;
 }
 
 .home-img img{
     width: 100%;
     object-fit: contain;
+    border-radius: 300px;
 }
 
 .home-text {
@@ -113,61 +115,101 @@ section {
     display: flex;
     flex-direction: column;
     margin: 0;
-    margin-top: -80px;
+    margin-top: 0px;
+    margin-left: 100px;
+    margin-right: 100px;
+    color: white;
 }
 
 .home-text span{
-    padding: 5px 25px;
-    width: 280px;
-    background: linear-gradient(130.08deg, #09839e 10%, rgb(68, 128, 240) 100%);
-    border: 1px solid white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: -10px;
+    width: 350px;
+    background: linear-gradient(130.08deg, #171a4a 10%,#2f2c79 100%);
+    /*border: 1px solid white;*/
     border-radius: 100px;
     color: white;
-    font-weight: 700;
-    font-size: 9px;
+    font-size: 13px;
     text-transform: uppercase;
     margin: 0;
+    margin-bottom: 20px;
 }
 
 .home-text h1{
-    font-size: 17px;
+    font-size: 20px;
     margin: 23px 0;
+}
 
+.home-text h1A{
+    margin-top: -30px;
+    font-size: 40px;
+    font-weight: 400;
+    color: #e8c39e;
 }
 
 .home-text p{
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 100;
     line-height: 30px;
     mask-border: 50px;
     margin-top: 40px;
-    margin-bottom: 10px;
-    margin-left: 40px;
+    margin-bottom: 5px;
+    margin-left: 20px;
 }
 
 .home-text h2{
-    font-size: 40px;
-    font-weight: 50;
-    line-height: 40px;
+    font-size: 30px;
+    font-weight: 20;
+    line-height: 35px;
     mask-border: 50px;
     margin-bottom: 10px;
-    margin-right: 30px;
-    margin-left: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #f5e1ce;
+    font-style: italic;
 }
 
-.btn {
+.contact {
+    position: relative;
+    display:flex;
+    margin-top: 60px;
+    padding: 0;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.contact-btn a{
     display: inline-block;
-    padding: 8px 15px;
-    background: rgba(7, 66, 114, 0.928);
+    padding: 12px 20px;
+    background: linear-gradient(130.08deg, #171a4a 10%,#2f2c79 100%);
     color: rgb(255, 255, 255);
-    border: 1px solid rgba(0, 0, 0, 0.31);
-    font-size: 10px;
+    /*border: 1px solid rgba(0, 0, 0, 0.31);*/
+    font-size: 15px;
     font-weight: 600;
     border-radius: 8px;
     transition: all 0.6s ease-in-out;
     margin-top: 10px;
-    margin-left: 30px;
     width: 100px;
+    text-transform: uppercase;
+    width: 150px;
+    margin-right: 30px;
+}
+
+.proyects-btn a{
+    display: inline-block;
+    padding: 12px 20px;
+    background: linear-gradient(130.08deg, #171a4a 10%,#2f2c79 100%);
+    color: rgb(255, 255, 255);
+    /*border: 1px solid rgba(0, 0, 0, 0.31);*/
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.6s ease-in-out;
+    margin-top: 10px;
+    width: 160px;
+    text-transform: uppercase;
+    margin-left: 20px;
 }
 
 .btn:hover {
@@ -306,7 +348,7 @@ section {
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid rgb(49, 96, 178);
+    /*border: 1px solid rgb(49, 96, 178);*/
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -346,6 +388,77 @@ section {
     padding: 10px;
     font-size: 15px;
     color: #1b3963;
+}
+
+.contactme {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    align-items:center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 0 25px;
+    margin-top: -60px;
+    /*background-color: #000020;*/
+    background-image: image();
+    background-image: url('IMG_8236.jpg'); /* Especifica la ruta a tu imagen aquí */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.contactme::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 32, 0.70); /* Ajusta la opacidad según sea necesario */
+    z-index: -1; /* Asegúrate de que el pseudo-elemento esté detrás del contenido */
+}
+
+.contact-info {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    display:flex;
+    align-items:center;
+    gap: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 0px;
+    /*background-color: #000020;*/
+    color: white;
+}
+
+.title-contact {
+    font-size: 3rem;
+    color: #e8c39e;
+    text-align: center;
+    margin: 20px 0;
+    padding-top: 50px;
+    /* Otros estilos comunes */
+}
+
+.contactme-info {
+    align-items:center;
+    padding-left: 200px;
+    line-height: 35px;
+}
+
+.contactme-text{
+    align-items:center;
+    padding-left: 200px;
+}
+
+.contactme .Title{
+    text-transform: uppercase;
+}
+
+.contactme .Info{
+    padding-bottom: 25px;
 }
 
 .bar{
